@@ -1,0 +1,13 @@
+index.md
+*.png
+my-sanity-blog/sanity.config.js
+my-sanity-blog/sanity.cli.js
+my-sanity-blog/node_modules
+my-blog/apollo-client.js
+
+# dependencies
+my-blog/node_modules
+
+
+# next.js
+my-blog/.next/
