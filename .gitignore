@@ -11,3 +11,5 @@ my-blog/node_modules
 
 # next.js
 my-blog/.next/
+
+my-blog/.env

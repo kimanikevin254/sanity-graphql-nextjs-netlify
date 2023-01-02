@@ -12,10 +12,10 @@ export default function Post({ post }){
     const router = useRouter()
 
     const updateLikes = () => {
-        fetch('https://xi2ago5o.api.sanity.io/v2021-06-07/data/mutate/production', {
-            method: 'POST',
+      fetch(`https://${process.env.APP_ID}.api.sanity.io/v2021-06-07/data/mutate/production`, {
+        method: 'POST',
             headers: {
-                'Authorization': 'Bearer skOEhOv5986QrZHWW3iNVcAgcickAHFOhD5x6wO532CYzlTAR14YSSoWs4azPxTzvV85KtPQP7E7ZjFH9',
+                'Authorization': `Bearer ${process.env.BEARER_TOKEN}`,
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify({
@@ -33,10 +33,10 @@ export default function Post({ post }){
     }
 
     const updateViews = () => {
-        fetch('https://xi2ago5o.api.sanity.io/v2021-06-07/data/mutate/production', {
+        fetch(`https://${process.env.APP_ID}.api.sanity.io/v2021-06-07/data/mutate/production`, {
             method: 'POST',
             headers: {
-                'Authorization': 'Bearer skOEhOv5986QrZHWW3iNVcAgcickAHFOhD5x6wO532CYzlTAR14YSSoWs4azPxTzvV85KtPQP7E7ZjFH9',
+                'Authorization': `Bearer ${process.env.BEARER_TOKEN}`,
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify({
